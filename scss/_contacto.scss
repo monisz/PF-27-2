@@ -1,0 +1,21 @@
+.formulario {
+    background-color: lightblue;
+    padding: 1%;
+    width: 60vw;
+    margin-left: 20vw;
+} 
+
+.ubicacion {
+    margin-top: 10vh;
+    .ubicacion__titulo {
+        @extend %subtitulos;
+        align-self: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .flario {
+        margin-left: 2vw;
+        width: 96vw;
+    }
+}

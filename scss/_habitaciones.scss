@@ -1,0 +1,100 @@
+.habitacion {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    margin-top: 20px;
+    .habitacion__tipo {
+        margin: 40px 0;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        .habitacion__tipo__imagen {
+            width: 40%;
+        }
+        .habitacion__tipo__nombre {
+            color: $colorazulespecial;
+            width: 20%;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+        .habitacion__tipo__detalle {
+            width: 20%;
+            padding-right: 4%;
+            font-weight: bolder;
+        }
+        .habitacion__tipo__items {
+            list-style-image: url("/imagenes/check.png");
+            width: 15%;
+        }
+    }
+}
+
+.habitacion__todas {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .habitacion {
+        margin-top: 10px;
+        .habitacion__tipo {
+            margin: 30px 0;
+            img {
+                width: 35%;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .habitacion {
+        margin-top: 0px;
+        .habitacion__tipo {
+            .habitacion__tipo__nombre {
+                font-size: 25px;
+            }
+            .habitacion__tipo__detalle {
+                font-size: 14px;
+            }
+        }
+    } 
+    .habitacion__todas {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .habitacion {
+        .habitacion__tipo {
+            flex-wrap: wrap;
+            margin: 0 0 30px 0;
+            img {
+                width: 50%;
+            }
+            .habitacion__tipo__nombre {
+                width: 50%;
+            }
+            .habitacion__tipo__detalle {
+                width: 40%;
+                font-size: 16px;
+            }
+            .habitacion__tipo__items {
+                width: 40%;
+                padding-left: 10%;
+            }
+        }
+    }
+    .habitacion__todas {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo__pagina {
+        font-size: 190%;
+    }
+}
