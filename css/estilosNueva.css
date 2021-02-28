@@ -152,7 +152,7 @@
     .gastronomia .gastronomia__imagen {
       width: unset;
       padding: 50% 1%; 
-      max-height: width/1.5;}
+      height: auto;}
   .spa {
     flex-direction: column;
     justify-content: center;
